@@ -41,9 +41,7 @@ namespace OpenFoodFacts.Product
         [JsonProperty(PropertyName = "last_modified_t")]
         [JsonConverter(typeof(UnixDateTimeConverter))]
         public DateTime LastModifiedTime { get; set; }
-        [JsonProperty(PropertyName = "completed_t")]
-        [JsonConverter(typeof(UnixDateTimeConverter))]
-        public DateTime CompletedTime { get; set; }
+        //TODO : Investigate whether completed_t exists in the API.
         #endregion Timestamps
 
         #region URLs
