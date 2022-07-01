@@ -1,4 +1,4 @@
-name: .NET
+name: .NET Test and Publish
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
     - name: Build
       run: dotnet build --no-restore -c Release
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal -c Release
     - uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@v2.1
       if: github.event_name != 'pull_request'
       with:
