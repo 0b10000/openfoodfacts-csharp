@@ -1,11 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Albert-Le5, 0b10000</Authors>
+    <PackageProjectUrl>https://github.com/0b10000/openfoodfacts-csharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/0b10000/openfoodfacts-csharp/blob/master/LICENSE</RepositoryUrl>
+    <TargetFrameworks>net6.0;netstandard2.1</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
