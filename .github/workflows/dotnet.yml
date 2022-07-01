@@ -26,7 +26,7 @@ jobs:
     - uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@v2.1
       if: github.event_name != 'pull_request'
       with:
-        nupkg-path:  './bin/Release/*.nupkg'
+        nupkg-path:  './OpenFoodFacts/bin/Release/*.nupkg'
         repo-owner:  '0b10000'
         gh-user:  '0b10000'
         token:  ${{ secrets.GITHUB_TOKEN }}
