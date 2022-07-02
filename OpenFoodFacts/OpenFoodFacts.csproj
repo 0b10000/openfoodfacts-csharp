@@ -4,8 +4,9 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Albert-Le5, 0b10000</Authors>
     <PackageProjectUrl>https://github.com/0b10000/openfoodfacts-csharp</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/0b10000/openfoodfacts-csharp/blob/master/LICENSE</RepositoryUrl>
+    <RepositoryUrl>https://github.com/0b10000/openfoodfacts-csharp</RepositoryUrl>
     <TargetFrameworks>net6.0;netstandard2.1</TargetFrameworks>
+    <PackageLicenseUrl>https://github.com/0b10000/openfoodfacts-csharp/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
   <ItemGroup>
