@@ -24,6 +24,8 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal -c Release
     - name: Authenticate to NuGet
+      if: github.event_name != 'pull_request'
       run: dotnet nuget add source --username 0b10000 --password ${{ secrets.TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/0b10000/index.json"
     - name: Push to NuGet
+      if: github.event_name != 'pull_request'
       run: dotnet nuget push "./OpenFoodFacts/bin/Release/*.nupkg" --source github --api-key ${{ secrets.TOKEN }}
